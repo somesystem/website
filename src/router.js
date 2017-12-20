@@ -1,17 +1,16 @@
-import Router from 'vue-router';
+import Router from 'vue-router'
 
-// const home = r => require(['./home.vue'], r);
-import home from './views/home';
-import about from './views/about';
+import home from './views/home'
 
-const topic = r => require.ensure([], () => r(require('./views/topic/index.vue')), 'group-topic');
-const topicRen = r => require.ensure([], () => r(require('./views/topic/rendering.vue')), 'group-topic');
-const topicCom = r => require.ensure([], () => r(require('./views/topic/components.vue')), 'group-topic');
-const topicPro = r => require.ensure([], () => r(require('./views/topic/props-v-state.vue')), 'group-topic');
+const product = r => require.ensure([], () => r(require('./views/product')), 'product');
+const news = r => require.ensure([], () => r(require('./views/news/list')), 'news');
+const newsDetail = r => require.ensure([], () => r(require('./views/news/detail')), 'newsDetail');
+const connect = r => require.ensure([], () => r(require('./views/connect')), 'connect');
+const about = r => require.ensure([], () => r(require('./views/about')), 'about');
 
 const routes = [{
     path: '/',
-    redirect: '/home'
+    redirect: '/home',
 },{
     path: '/home',
     name: 'home',
@@ -20,27 +19,37 @@ const routes = [{
         keepAlive: true // 是否缓存
     }
 },{
+    path: '/product',
+    component: product,
+    meta: {
+        keepAlive: true
+    }
+},{
+    path: '/news',
+    children: [{
+        path: 'list/:page?',
+        name: 'news',
+        component: news
+    },{
+        path: 'detail/:id?',
+        name: 'newsDetail',
+        component: newsDetail
+    }],
+    meta: {
+        keepAlive: false
+    }
+},{
+    path: '/connect',
+    component: connect,
+    meta: {
+        keepAlive: true
+    }
+},{
     path: '/about',
     component: about,
     meta: {
         keepAlive: true
     }
-},{
-    path: '/topic',
-    component: topic,
-    meta: {
-        keepAlive: false
-    },
-    children: [{
-        path: '',
-        component: topicRen
-    },{
-        path: 'components',
-        component: topicCom
-    },{
-        path: 'props-v-state',
-        component: topicPro
-    }],
 }];
 
 

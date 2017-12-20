@@ -18,6 +18,9 @@ i,em,b,strong{
   font-style: normal;
   font-weight: normal;
 }
+h1,h2,h3,h4,h5,h6{
+  font-weight: normal;
+}
 input, textarea, select {
   outline: none; 
 }
@@ -45,7 +48,4 @@ a.a_c{
 }
 a.a_c:active{
   transform: scale(0.95,0.95);
-}
-[v-cloak]{
-  display: none;
 }

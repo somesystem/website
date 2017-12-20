@@ -1,7 +1,16 @@
-$yellow: #e09504;
-$lightyellow: #fdd8a6;
-$blue: #7560f9;
-$origin: #ff4f1a;
+$color_base: #333333;
+$size_middle: 16px;
+$size_small: 12px;
+
+$bg_ac: #ff7e46;
+$bg_foot: #171b25;
+
+$line-dark: #454951;
+
+%mwidht{
+	width: 89%;
+	margin: 0 auto;
+}
 
 @mixin bg($img,$x:100%,$y:100%){
 	background-repeat: no-repeat;
