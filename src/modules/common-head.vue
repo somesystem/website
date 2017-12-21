@@ -16,7 +16,7 @@
 <style lang="scss">
     @import "../styles/base";
     .common-head-box{
-        @extend %mwidht;
+        @extend %mwidth;
         position: relative;
         padding: 18px 0;
         > a {

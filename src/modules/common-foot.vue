@@ -35,7 +35,7 @@
         background-color: $bg_foot;
     }
     .common-foot-warp{
-        @extend %mwidht;
+        @extend %mwidth;
         padding: 44px 30px;
         &,a{
             color: #fff;

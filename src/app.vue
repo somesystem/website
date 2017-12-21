@@ -11,7 +11,6 @@
 
 <style lang="scss">
     @import "./styles/reset";
-    @import "./styles/index";
 </style>
 <script type="text/javascript">
     import CommonHead from './modules/common-head';

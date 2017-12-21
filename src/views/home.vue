@@ -1,58 +1,100 @@
 <template>
     <div class="home">
-        <div class="home-swiper">swiper</div>
+        <div class="home-swiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="item in banner">
+                    <a :href="item.link"><img :src="item.src" alt=""></a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+        </div>
 
         <div class="home-pay">
-            <h2>支付方式多样化选择</h2>
-            <aside>为移动支付服务商提供多种收款方式，满足大、中、小微商户的使用需求</aside>
-
+            <h2>{{pay.title}}</h2>
+            <aside>{{pay.dec}}</aside>
             <ul>
-                <li>
+                <li v-for="item in pay.list">
                     <i></i>
-                    <h3>二维码收银</h3>
-                    <span></span>
-                    <p>商户打开微信或支付宝扫一扫二维码，输入金额即可完成支付，每个店铺、每个...</p>
+                    <h3>{{item.title}}</h3>
+                    <div></div>
+                    <p>{{item.dec}}</p>
                 </li>
             </ul>
         </div>
         <div class="home-product">
-            <h2>营销产品多样化选择</h2>
-            <aside>为移动支付服务商提供多种收款方式，满足大、中、小微商户的使用需求</aside>
+            <h2>{{product.title}}</h2>
+            <aside>{{product.dec}}</aside>
             <ul>
-                <li></li>
+                <li v-for="item in product.list">
+                    <i></i>
+                </li>
             </ul>
         </div>
         <div class="home-pipe">
-            <h2>聚合支付多渠道选择</h2>
-            <aside>为移动支付服务商提供多种收款方式，满足大、中、小微商户的使用需求</aside>
+            <h2>{{pipe.title}}</h2>
+            <aside>{{pipe.dec}}</aside>
             <ul>
-                <li></li>
+                <li v-for="item in pipe.list">
+                    <p v-html="item.text"></p>
+                </li>
             </ul>
         </div>
         <div class="home-friend">
-            <h2>合作伙伴，创造辉煌成绩</h2>
-            <aside>为移动支付服务商提供多种收款方式，满足大、中、小微商户的使用需求</aside>
+            <h2>{{friend.title}}</h2>
+            <aside>{{friend.dec}}</aside>
             <ul>
-                <li></li>
+                <li v-for="item in friend.list">
+                    <img :src="item.src" alt="">
+                </li>
             </ul>
         </div>
         <div class="home-question">
             <h2>热门咨询</h2>
             <ul>
-                <li></li>
+                <li v-for="item in hot"></li>
             </ul>
         </div>
     </div>
 </template>
 
 <script type="text/javascript">
+    import Swiper from 'swiper'
+    import 'swiper/dist/css/swiper.min.css'
+    import home from "../data/home";
+
     export default {
         data(){
-            return {}
+            return {
+                banner: home.banner,
+                pay: home.pay,
+                product: home.product,
+                pipe: home.pipe,
+                friend: home.friend,
+                hot: []
+            }
+        },
+        mounted(){
+            this.$nextTick(() => {
+                this.swiper = new Swiper('.home-swiper', {
+                    loop: true,
+                    autoplay: true,
+                    pagination: {
+                        el: '.swiper-pagination'
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    }
+                })
+            });
         }
     }
 </script>
 
 <style lang="scss" scoped>
-    
+    @import "../styles/home";
 </style>

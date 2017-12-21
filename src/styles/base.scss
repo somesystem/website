@@ -1,13 +1,20 @@
 $color_base: #333333;
+$color_tint: #d3d3d3;
+
+$size_big: 36px;
 $size_middle: 16px;
+$size_x: 14px;
 $size_small: 12px;
 
 $bg_ac: #ff7e46;
 $bg_foot: #171b25;
+$bg_grey: #d7d7d7;
+$bg_little: #f8f8fa;
 
 $line-dark: #454951;
+$line-light: #ebebeb;
 
-%mwidht{
+%mwidth{
 	width: 89%;
 	margin: 0 auto;
 }

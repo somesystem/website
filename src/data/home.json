@@ -1,0 +1,63 @@
+{
+    "version": "1.0.0",
+    "banner": [
+        {
+            "src": "/images/static/banner1.jpg",
+            "link": "javascript:;"
+        },
+        {
+            "src": "/images/static/banner1.jpg",
+            "link": "javascript:;"
+        },
+        {
+            "src": "/images/static/banner1.jpg",
+            "link": "javascript:;"
+        }
+    ],
+    "pay": {
+        "title": "支付方式多样化选择",
+        "dec": "为移动支付服务商提供多种收款方式，满足大、中、小微商户的使用需求",
+        "list": [
+            {
+                "title": "二维码收银",
+                "dec": "商户打开微信或支付宝扫一扫二维码，输入金额即可完成支付，每个店铺、每个"
+            },
+            {
+                "title": "APP收银",
+                "dec": "手机安装APP,自动识别付款码，不但实现手机 收银，提供多渠道收款方式管理，还是你的掌"
+            },
+            {
+                "title": "PC收银", 
+                "dec": "用户出示微信或者支付宝付款码，商户使用扫 码设备扫顾客付款码提交，完成支付"
+            },
+            {
+                "title": "POS机收银",
+                "dec": "智能POS扫码或刷卡，完成支付"
+            }
+        ]
+    },
+    "product": {
+        "title": "营销产品多样化选择",
+        "dec": "为移动支付服务商提供多种收款方式，满足大、中、小微商户的使用需求",
+        "list": [{},{},{},{}]
+    },
+    "pipe": {
+        "title": "聚合支付多渠道选择",
+        "dec": "为移动支付服务商提供多种收款方式，满足大、中、小微商户的使用需求",
+        "list": [
+            {"text": "微信支付<br/>直连"},
+            {"text": "支付宝<br/>直连"},
+            {"text": "拉卡拉<br/>(直/间连)"},
+            {"text": "银行<br/>(直/间连)"}
+        ]
+    },
+    "friend": {
+        "title": "合作伙伴，创造辉煌成绩",
+        "dec": "为移动支付服务商提供多种收款方式，满足大、中、小微商户的使用需求",
+        "list": [
+            {"src": "/images/static/wx_pay.png"},
+            {"src": "/images/static/zhifubao.png"},
+            {"src": "/images/static/lakala.jpg"}
+        ]
+    }
+}
