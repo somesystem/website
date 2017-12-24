@@ -1,8 +1,4 @@
 @import "./base";
-.swiper-slide img{
-    display: block;
-    width: 100%;
-}
 
 .home-pay,.home-product,.home-pipe,.home-friend,.home-question{
     h2{
@@ -102,7 +98,7 @@
             width: 105px;
             height: 118px;
             cursor: pointer;
-            @include bg('hexagon.png');
+            @include bg('hexagon2.png');
             &:last-child{
                 margin-right: 0;
             }

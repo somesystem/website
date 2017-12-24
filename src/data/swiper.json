@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "data": [
+        {
+            "src": "/images/static/banner1.jpg",
+            "link": "javascript:;"
+        },
+        {
+            "src": "/images/static/banner1.jpg",
+            "link": "javascript:;"
+        },
+        {
+            "src": "/images/static/banner1.jpg",
+            "link": "javascript:;"
+        }
+    ]
+}

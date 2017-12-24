@@ -41,3 +41,5 @@ You just need to run `npm run dev`.
 *如果问题，请[联系我](mailto:hezhe@ihangmei.com)*  
 
 
+### 项目上线    
+上线输出目录dist即可    
