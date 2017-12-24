@@ -4,8 +4,10 @@ import router from './router'
 import App from './app'
 import FastClick from 'fastclick'
 import Swiper from './modules/swiper'
+import { dataFormat } from './modules/method'
 
 Vue.component('swiper',Swiper);
+Vue.filter('MonthAndDay', time => dataFormat(time,'MM-DD'));
 
 new Vue({
     el: "#app",

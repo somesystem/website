@@ -5,7 +5,7 @@
             <nav>
                 <router-link to="/home">首页</router-link>
                 <router-link to="/product">产品中心</router-link>
-                <router-link :to="{name:'news',params:{page:1}}">新闻动态</router-link>
+                <router-link :to="{name:'newsList'}">新闻动态</router-link>
                 <router-link to="/connect">合作招募</router-link>
                 <router-link to="/about">关于我们</router-link>
             </nav>

@@ -1,0 +1,133 @@
+@import "./base";
+
+.content-pattern,.content-aptitude,.content-join{
+    padding-top: 50px;
+    h2{
+        font-size: $size_big;
+        text-align: center;
+    }
+    > aside{
+        font-size: $size_middle;
+        text-align: center;
+        line-height: 3;
+        color: $color_tint;
+    }
+}
+
+.content-pattern{
+    > ul{
+        @extend %mwidth;
+        display: flex;
+        margin-top: 60px;
+        border-bottom: 1px dashed $color_tint;
+        li{
+            flex: 1;
+            padding: 8px 24px 120px 24px;
+            border-right: 1px dashed $color_tint;
+            cursor: pointer;
+
+            h3{
+                font-size: $size_middle;
+                line-height: 3;
+            }
+            p{
+                color: $color_easy;
+                font-size: $size_small;
+                line-height: 2;
+            }
+            &:last-child{
+                border-right: none;
+            }
+            &.active,&:hover{
+                h3,p{
+                    color: $bg_ac;
+                }
+            }
+        }
+    }
+}
+
+.content-aptitude{
+    > ul{
+        @extend %mwidth;
+        display: flex; 
+        padding: 80px;
+        li{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            i{
+                display: block;
+                width: 122px;
+                height: 122px;
+                border-radius: 50%;
+            }
+            h3{
+                font-size: $size_l;
+                line-height: 3;
+            }
+            
+            $bgcolor: #a1d38c #7dd8e3 #e3ba82;
+            @for $i from 1 to 4{
+                &:nth-child(#{$i}){
+                    i{
+                        background: nth($bgcolor,$i) url("../../images/icon#{$i+8}.png") no-repeat center center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-join{
+    > ul{
+        @extend %mwidth;
+        display: flex; 
+        padding: 60px 0 30px;
+
+        li{
+            position: relative;
+            flex: 1;
+            margin: 0 30px;
+            border: 1px dotted $bg_ac;
+            padding: 5px;
+            border-radius: 28px;
+
+            h3{
+                height: 46px;
+                line-height: 46px;
+                border-radius: 23px;
+                background-color: $bg_ac;
+                color: #fff;
+                text-align: center;
+                font-size: $size_middle;
+            }
+
+            i{
+                position: absolute;
+                right: -45px;
+                top: 50%;
+                margin-top: -10px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: transparent transparent transparent $bg_ac;
+            }
+
+            &:last-child i{
+                display: none;
+            }
+        }
+    }
+}
+
+.content-join-other{
+    @extend %mwidth;
+    padding: 53px 26px;
+    p{
+        font-size: $size_middle;
+        line-height: 3;
+    }
+}

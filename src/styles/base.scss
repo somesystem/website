@@ -1,7 +1,11 @@
 $color_base: #333333;
 $color_tint: #d3d3d3;
+$color_weak: #999999;
+$color_easy: #a4a4a4;
 
 $size_big: 36px;
+$size_large: 28px;
+$size_l: 20px;
 $size_middle: 16px;
 $size_x: 14px;
 $size_small: 12px;
@@ -10,6 +14,7 @@ $bg_ac: #ff7e46;
 $bg_foot: #171b25;
 $bg_grey: #d7d7d7;
 $bg_little: #f8f8fa;
+$bg_page: #6b6b6b;
 
 $line-dark: #454951;
 $line-light: #ebebeb;
@@ -17,6 +22,7 @@ $line-light: #ebebeb;
 %mwidth{
 	width: 89%;
 	margin: 0 auto;
+    box-sizing: border-box;
 }
 
 @mixin bg($img,$x:100%,$y:100%){

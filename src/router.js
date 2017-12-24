@@ -3,8 +3,8 @@ import Router from 'vue-router'
 import home from './views/home'
 
 const product = r => require.ensure([], () => r(require('./views/product')), 'product');
-const news = r => require.ensure([], () => r(require('./views/news/list')), 'news');
-const newsDetail = r => require.ensure([], () => r(require('./views/news/detail')), 'newsDetail');
+const newsList = r => require.ensure([], () => r(require('./views/news-list')), 'newsList');
+const newsDetail = r => require.ensure([], () => r(require('./views/news-detail')), 'newsDetail');
 const connect = r => require.ensure([], () => r(require('./views/connect')), 'connect');
 const about = r => require.ensure([], () => r(require('./views/about')), 'about');
 
@@ -25,16 +25,16 @@ const routes = [{
         keepAlive: true
     }
 },{
-    path: '/news',
-    children: [{
-        path: 'list/:page?',
-        name: 'news',
-        component: news
-    },{
-        path: 'detail/:id?',
-        name: 'newsDetail',
-        component: newsDetail
-    }],
+    path: '/newsList/:page?',
+    name: 'newsList',
+    component: newsList,
+    meta: {
+        keepAlive: true
+    }
+},{
+    path: '/newDetail/:id?',
+    name: 'newsDetail',
+    component: newsDetail,
     meta: {
         keepAlive: false
     }
@@ -47,6 +47,15 @@ const routes = [{
 },{
     path: '/about',
     component: about,
+    meta: {
+        keepAlive: true
+    }
+},{
+    path: '*',
+    name: "404",
+    component: {
+        template: "<div>404</div>"
+    },
     meta: {
         keepAlive: true
     }

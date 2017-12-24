@@ -42,7 +42,7 @@
     }
 </script>
 
-<style>
+<style lang="scss">
     .swiper-slide img{
         display: block;
         width: 100%;
