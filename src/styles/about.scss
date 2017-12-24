@@ -1,0 +1,66 @@
+@import "./base";
+
+.about-us,.about-space,.about-connect{
+    padding-top: 50px;
+    h2{
+        font-size: $size_big;
+        text-align: center;
+    }
+    > aside{
+        font-size: $size_middle;
+        text-align: center;
+        line-height: 3;
+        color: $color_tint;
+    }
+}
+
+.about-us{
+    > p{
+        @extend %mwidth;
+        padding: 23px;
+        font-size: $size_middle;
+        text-align: justify;
+        line-height: 2.2;
+    }
+}
+
+.about-space{
+    > aside{
+        margin-bottom: 40px;
+    }
+    > ul{
+        @extend %mwidth;
+        display: flex;
+
+        li{
+            flex: 1;
+            padding: 6px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+.about-connect-main{
+    @extend %mwidth;
+    display: flex;
+    padding: 30px 0 100px;
+    align-items: center;
+
+    > img{
+        display: block;
+        flex: 3;
+    }
+}
+.about-connect-other{
+    flex: 2;
+    padding: 75px;
+    box-sizing: border-box;
+    p{
+        font-size: $size_x;
+        line-height: 3.5;
+    }
+}

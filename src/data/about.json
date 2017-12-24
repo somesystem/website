@@ -1,0 +1,35 @@
+{
+    "version": "1.0.0",
+    "about": {
+        "title": "关于我们",
+        "dec": " 武汉木丰科技有限公司，坐落在美丽的江城武汉，专注于移动支付系统开发。木丰科技以技术为核心，技术研发团队成熟，主要由一群80后、90后组成，已独立开发出商业客户管理系统、第三方支付收银系统（PC收银台、二合一二维码收银、商户营销APP、收银系统集成接口）、打赏、微信卡券、大屏互动（签到、摇钱树场互动游戏）等前沿新媒体互动应用，产品不定期迭代更新，各产品后台无缝联动，能为客户提供精致而简介的操作体验。<br/>木丰科技作为移动支付系统专业开发者，未来将继续专注推动移动支付行业发展，为打造智能、智慧生活服务圈贡献自己的力量，努力创新，为客户提供更优质更专业的服务。"
+    },
+    "space": {
+        "title": "我们的空间",
+        "dec": "我们倡导自由，激发式的工作氛围，分享与汲取是其中的主题.",
+        "list1": [
+            { "img": "/images/static/space1.jpg" },
+            { "img": "/images/static/space2.jpg" },
+            { "img": "/images/static/space3.jpg" },
+            { "img": "/images/static/space4.jpg" }
+            
+        ],
+        "list2": [
+            { "img": "/images/static/space5.jpg" },
+            { "img": "/images/static/space6.jpg" },
+            { "img": "/images/static/space7.jpg" },
+            { "img": "/images/static/space8.jpg" }
+        ]
+    },
+    "connect": {
+        "title": "联系我们",
+        "map": "/images/static/map.jpg",
+        "other": [
+            "邮箱：<a href=\"mailto:wuhanmufeng131@163.com\">wuhanmufeng131@163.com</a>",
+            "电话：<a href=\"tel:027-62435770\">027-62435770</a>",
+            "微信：mufeng_applet",
+            "微信：mufeng_applet",
+            "地址：武汉市东湖高新技术开发区光谷大道现代。世贸中心J栋1003"
+        ]
+    }
+}

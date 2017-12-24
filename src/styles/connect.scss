@@ -29,11 +29,13 @@
             h3{
                 font-size: $size_middle;
                 line-height: 3;
+                text-align: right;
             }
             p{
                 color: $color_easy;
                 font-size: $size_small;
                 line-height: 2;
+                text-align: right;
             }
             &:last-child{
                 border-right: none;
