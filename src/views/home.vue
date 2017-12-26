@@ -44,14 +44,41 @@
         <div class="home-question">
             <h2>热门咨询</h2>
             <ul>
-                <li v-for="item in hot"></li>
+                <li @click="toDetail(item.id)" class="home-question-list" v-for="item in hot">
+                    <div class="home-question-l">
+                        <p>{{item.time | MonthAndDay}}</p>
+                        <p>{{item.time | Year}}</p>
+                    </div>
+                    <div v-show="item.img" class="home-question-c">
+                        <img :src="item.img" alt="">
+                    </div>
+                    <div class="home-question-r">
+                        <h3>{{item.title}}</h3>
+                        <p>{{item.dec}}</p>
+                    </div>
+                </li>
             </ul>
+            <router-link :to="{name:'newsList'}" class="home-question-more"></router-link>
         </div>
     </div>
 </template>
 
 <script type="text/javascript">
     import { pay,product,pipe,friend } from "../data/home";
+    const TestData = [
+        { "id": 1, "time": Date.now(), 
+          "title": "买火车票终于可以用微信支付啦", 
+          "dec": "昨日，12306网站上发布公告，从2017年11月23日期，中国铁路客户服务中心12306网站微信支付服务功能上线运营"
+        },
+        { "id": 2, "time": Date.now(), "img": "/images/static/topic2.jpg", 
+          "title": "民生银行称全面关停支付机构通道业务不属实", 
+          "dec": "这两天，在移动支付行业内，传出关于民生银行将关闭所有支付公司的通道业务，而华夏银行也已经暂停。..."
+        },
+        { "id": 3, "time": Date.now(), 
+          "title": "微信支付中刷卡支付的场景介绍及验证密码的", 
+          "dec": "微信支付官网上，将用户展示微信钱包内的“刷卡条码/二维码”给商户系统扫描后直接完成支付的模式称之为刷......"
+        }
+    ];
 
     export default {
         data(){
@@ -61,6 +88,19 @@
                 pipe,
                 friend,
                 hot: []
+            }
+        },
+        mounted() {
+            this.getDate();
+        },
+        methods: {
+            getDate(){
+                setTimeout(() => {
+                    this.hot = TestData;
+                }, 500);
+            },
+            toDetail(id){
+                this.$router.push({name:"newsDetail",params:{id}});
             }
         }
     }

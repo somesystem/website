@@ -8,6 +8,7 @@ import { dataFormat } from './modules/method'
 
 Vue.component('swiper',Swiper);
 Vue.filter('MonthAndDay', time => dataFormat(time,'MM-DD'));
+Vue.filter('Year', time => dataFormat(time,'YYYY'));
 
 new Vue({
     el: "#app",
