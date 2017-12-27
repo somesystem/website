@@ -1,5 +1,6 @@
 <template>
-    <div class="news-item" @click="toDetail(id)">
+    <div class="news-item">
+        <a class="news-item-link" target="_blank" :href="url"></a>
         <div class="news-item-box">
             <img :src="img" alt="">
         </div>
@@ -13,7 +14,7 @@
 
 <script>
     export default {
-        props: ["id","img","title","dec","time"],
+        props: ["url","img","title","dec","time"],
         methods: {
             toDetail(id){
                 this.$router.push({name: "newsDetail", params: {id}})
@@ -26,6 +27,7 @@
     @import "../styles/base";
 
     .news-item{
+        position: relative;
         cursor: pointer;
         display: flex;
         padding: 26px;
@@ -37,6 +39,13 @@
             test-align: right;
             font-size: $size_large;
         }
+    }
+    .news-item-link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
     .news-item-box{
         flex: 1;

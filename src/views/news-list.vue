@@ -4,11 +4,11 @@
         {{$route.params.id}}
         <div class="news-list-box">
             <news-item :key="item.id" v-for="item in data" 
-                :id="item.id" :img="item.img" :title="item.title" 
+                :url="item.url" :img="item.img" :title="item.title" 
                 :dec="item.dec" :time="item.time"></news-item>
 
             <ul class="page" v-show="page > 0">
-                <li @click="toListPage(item)" :key="item" v-for="item in page">{{item}}</li>
+                <li :class="curPage==item?'active':''" @click="toListPage(item)" :key="item" v-for="item in page">{{item}}</li>
             </ul>
         </div>
     </div>
@@ -16,20 +16,15 @@
 
 <script type="text/javascript">
     import NewsItem from '../modules/news-item'
-
-    const TestData = [
-        {"id":1,"img":"/images/static/temp1.jpg","title":"买火车票","dec":"描述","time":Date.now()},
-        {"id":2,"img":"/images/static/temp1.jpg","title":"买火车票","dec":"描述","time":Date.now()},
-        {"id":3,"img":"/images/static/temp1.jpg","title":"买火车票","dec":"描述","time":Date.now()},
-        {"id":4,"img":"/images/static/temp1.jpg","title":"买火车票","dec":"描述","time":Date.now()},
-        {"id":5,"img":"/images/static/temp1.jpg","title":"买火车票","dec":"描述","time":Date.now()}
-    ];
+    import newsData from '../data/news_list'
+    const Data = newsData.data;
 
     export default {
         data(){
             return {
-                data: [],
-                page: 0,
+                data: [], // 当前页面数据
+                num: 5, // 每页多少个
+                page: 0,  // 总页数,根据num自动计算
                 curPage: this.$route.params.page || 1
             }
         },
@@ -37,6 +32,7 @@
             '$route' (to) {
                 if (to.name == 'newsList') {
                     this.getData(to.params.page)
+                    this.curPage = to.params.page;
                 }
             }
         },
@@ -48,15 +44,8 @@
                 this.$router.replace({name:"newsList",params:{page}})
             },
             getData(curPage){
-                // 模拟接口 
-                setTimeout(() => {
-                    var testData = JSON.parse(JSON.stringify(TestData));
-                    for (var i = 0; i < testData.length; i++) {
-                        testData[i].title += curPage;
-                    }
-                    this.data = testData;
-                    this.page = 3;
-                }, 500);
+                this.page = Math.ceil(Data.length/this.num);
+                this.data = Data.slice((curPage-1)*this.num,curPage*this.num);
             }
         },
         components: {
@@ -86,6 +75,11 @@
             background-color: $bg_page;
             color: #fff;
             cursor: pointer;
+
+            &.active,&:hover{
+                background-color: $bg_ac;
+                color: #fff;
+            }
         }
     }
 </style>

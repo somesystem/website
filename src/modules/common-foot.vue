@@ -19,12 +19,13 @@
                     <p>地址：<a href="tel:027-62435770">027-62435770</a></p>
                 </div>
             </div>
-            <!--<nav class="common-foot-friend">-->
-                <!--<p>友情链接：</p>-->
-                <!--<a href="/">微信支付商户平台</a>-->
-                <!--<a href="/">微信支付商户平台</a>-->
-                <!--<a href="/">微信支付商户平台</a>-->
-            <!--</nav>-->
+            <!-- <nav class="common-foot-friend">
+                <p>友情链接：</p>
+                <a href="/">微信支付商户平台</a>
+                <a href="/">微信支付商户平台</a>
+                <a href="/">微信支付商户平台</a>
+            </nav> -->
+            <aside class="common-foot-cp">Copyright  2017 武汉木丰科技有限公司 鄂ICP备17010776号-1</aside>
         </div>
     </div>
 </template>
@@ -72,9 +73,11 @@
     }
     .common-foot-address{
         display: flex;
-        padding-left: 12.5%;
         flex-direction: column;
         justify-content: space-between;
+        > p{
+            padding-left: 25%;
+        }
     }
     .common-foot-friend{
         display: flex;
@@ -87,6 +90,12 @@
             display: block;
             margin-right: 40px;
         }
+    }
+    .common-foot-cp{
+        padding-top: 30px;
+        text-align: center;
+        font-size: $size_small;
+
     }
 </style>
 

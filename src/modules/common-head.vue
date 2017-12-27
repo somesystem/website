@@ -1,20 +1,34 @@
 <template>
     <div class="common-head">
-        <div class="common-head-box">
-            <router-link to="/"><img src="/images/static/logo.png" alt=""></router-link>
-            <nav>
-                <router-link to="/home">首页</router-link>
-                <router-link to="/product">产品中心</router-link>
-                <router-link :to="{name:'newsList'}">新闻动态</router-link>
-                <router-link to="/connect">合作招募</router-link>
-                <router-link to="/about">关于我们</router-link>
-            </nav>
+        <div class="common-head-warp">
+            <div class="common-head-box">
+                <router-link to="/"><img src="/images/static/logo.png" alt=""></router-link>
+                <nav>
+                    <router-link to="/home">首页</router-link>
+                    <router-link to="/product">产品中心</router-link>
+                    <router-link :to="{name:'newsList'}">新闻动态</router-link>
+                    <router-link to="/connect">合作招募</router-link>
+                    <router-link to="/about">关于我们</router-link>
+                </nav>
+            </div>
         </div>
     </div>
 </template>
 
 <style lang="scss">
     @import "../styles/base";
+    .common-head,.common-head-warp{
+        height: 76px;
+    }
+    .common-head-warp{
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px solid $line-light;
+    }
     .common-head-box{
         @extend %mwidth;
         position: relative;

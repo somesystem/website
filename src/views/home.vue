@@ -44,7 +44,8 @@
         <div class="home-question">
             <h2>热门咨询</h2>
             <ul>
-                <li @click="toDetail(item.id)" class="home-question-list" v-for="item in hot">
+                <li class="home-question-list" v-for="item in hot">
+                    <a class="home-question-link" target="_blank" :href="item.url"></a>
                     <div class="home-question-l">
                         <p>{{item.time | MonthAndDay}}</p>
                         <p>{{item.time | Year}}</p>
@@ -65,20 +66,7 @@
 
 <script type="text/javascript">
     import { pay,product,pipe,friend } from "../data/home";
-    const TestData = [
-        { "id": 1, "time": Date.now(), 
-          "title": "买火车票终于可以用微信支付啦",
-          "dec": "昨日，12306网站上发布公告，从2017年11月23日期，中国铁路客户服务中心12306网站微信支付服务功能上线运营"
-        },
-        { "id": 2, "time": Date.now(), "img": "/images/static/topic2.jpg", 
-          "title": "微信首次上线刷脸支付",
-          "dec": "刚刚 微信首次上线刷脸支付，抢先来看腾讯「智慧零售」的真面目"
-        },
-        { "id": 3, "time": Date.now(), 
-          "title": "微信支付中刷卡支付的场景介绍及验证密码的", 
-          "dec": "微信支付官网上，将用户展示微信钱包内的“刷卡条码/二维码”给商户系统扫描后直接完成支付的模式称之为刷......"
-        }
-    ];
+    import home_news from "../data/home_news";
 
     export default {
         data(){
@@ -87,20 +75,7 @@
                 product,
                 pipe,
                 friend,
-                hot: []
-            }
-        },
-        mounted() {
-            this.getDate();
-        },
-        methods: {
-            getDate(){
-                setTimeout(() => {
-                    this.hot = TestData;
-                }, 500);
-            },
-            toDetail(id){
-                this.$router.push({name:"newsDetail",params:{id}});
+                hot: home_news.data
             }
         }
     }
