@@ -19,7 +19,7 @@
             <aside>{{product.dec}}</aside>
             <ul>
                 <li v-for="item in product.list">
-                    <i></i>
+                    <router-link to="/product"><i></i></router-link>
                 </li>
             </ul>
         </div>
@@ -67,12 +67,12 @@
     import { pay,product,pipe,friend } from "../data/home";
     const TestData = [
         { "id": 1, "time": Date.now(), 
-          "title": "买火车票终于可以用微信支付啦", 
+          "title": "买火车票终于可以用微信支付啦",
           "dec": "昨日，12306网站上发布公告，从2017年11月23日期，中国铁路客户服务中心12306网站微信支付服务功能上线运营"
         },
         { "id": 2, "time": Date.now(), "img": "/images/static/topic2.jpg", 
-          "title": "民生银行称全面关停支付机构通道业务不属实", 
-          "dec": "这两天，在移动支付行业内，传出关于民生银行将关闭所有支付公司的通道业务，而华夏银行也已经暂停。..."
+          "title": "微信首次上线刷脸支付",
+          "dec": "刚刚 微信首次上线刷脸支付，抢先来看腾讯「智慧零售」的真面目"
         },
         { "id": 3, "time": Date.now(), 
           "title": "微信支付中刷卡支付的场景介绍及验证密码的", 
