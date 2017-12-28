@@ -18,7 +18,6 @@
     import NewsItem from '../modules/news-item'
     import newsData from '../data/news_list'
     const Data = newsData.data;
-
     export default {
         data(){
             return {

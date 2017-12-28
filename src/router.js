@@ -29,7 +29,7 @@ const routes = [{
     name: 'newsList',
     component: newsList,
     meta: {
-        keepAlive: true
+        keepAlive: false
     }
 },{
     path: '/newDetail/:id?',
