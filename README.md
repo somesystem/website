@@ -42,4 +42,53 @@ You just need to run `npm run dev`.
 
 
 ### 项目上线    
-上线输出目录dist即可    
+上线输出目录dist即可 
+
+### history 后台配置    
+##### Apache    
+```
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+``` 
+
+##### nginx     
+```
+location / {
+  try_files $uri $uri/ /index.html;
+}
+``` 
+##### nodejs    
+```
+const http = require('http')
+const fs = require('fs')
+const httpPort = 80
+
+http.createServer((req, res) => {
+  fs.readFile('index.htm', 'utf-8', (err, content) => {
+    if (err) {
+      console.log('We cannot open \'index.htm\' file.')
+    }
+
+    res.writeHead(200, {
+      'Content-Type': 'text/html; charset=utf-8'
+    })
+
+    res.end(content)
+  })
+}).listen(httpPort, () => {
+  console.log('Server listening on: http://localhost:%s', httpPort)
+})
+```     
+##### Caddy     
+```
+rewrite {
+    regexp .*
+    to {path} /
+}
+```     
