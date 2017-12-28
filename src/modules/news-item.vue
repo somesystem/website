@@ -51,6 +51,7 @@
         flex: 1;
         img{
             width: 100%;
+            height: 130px;
             display: block;
         }
     }

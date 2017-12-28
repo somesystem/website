@@ -3,122 +3,82 @@
     "data": [
         {
             "id":1,
-            "url":"https://www.baidu.com",
+            "url":"http://www.zfzj.cn/portal.php?mod=view&aid=801",
             "img":"/images/static/temp1.jpg",
-            "title":"买火车票1",
-            "dec":"描述",
+            "title":"银联联机预授权过闸，全线支持信用卡和借记卡，杭州地铁全国首创",
+            "dec":"以前杭州市民坐地铁，需要在自助购票机上买票，现在只要掏出银联IC卡（包括信用卡和借记卡）或者绑定了各类智能Pay的手机、手表、手环，在地铁站内的闸机上一刷，“滴”一声后，闸机打开放行。",
             "time":1514379424887
         },
         {
             "id":2,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票2",
-            "dec":"描述",
+            "url":"http://www.zfzj.cn/portal.php?mod=view&aid=794",
+            "img":"/images/static/temp2.jpg",
+            "title":"NFC和二维码支付哪个强？",
+            "dec":"当你还在想着如何在手机支付上一争高低的时候，人家支付已经开始不玩手机了。...",
             "time":1514379424887
         },
         {
             "id":3,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票3",
-            "dec":"描述",
+            "url":"http://www.zfzj.cn/portal.php?mod=view&aid=793",
+            "img":"/images/static/temp3.jpg",
+            "title":"沈阳无人便利店现“刷手支付”",
+            "dec":"人体手掌中静脉血管位于皮肤以下3毫米处，多而复杂，医学上各人都不相同，终生不变，无法伪造，且识别感应器具备活体检知功能。...",
             "time":1514379424887
         },
         {
             "id":4,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票4",
-            "dec":"描述",
+            "url":"http://www.zfzj.cn/portal.php?mod=view&aid=788",
+            "img":"/images/static/temp4.jpg",
+            "title":"为方便中国游客，美国国家铁路所有售票渠道开通银联卡受理 ...",
+            "dec":"美国国家铁路（Amtrak）所有售票渠道开始受理境内外发行的银联信用卡，尤其方便赴美自由行游客提前预订行程，提升支付体验。目前，美国几乎所有ATM都能用银联卡取款，80%以上的商家支持银联信用卡。",
             "time":1514379424887
         },
         {
             "id":5,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票5",
-            "dec":"描述",
+            "url":"http://www.zfzj.cn/portal.php?mod=view&aid=786",
+            "img":"/images/static/temp5.jpg",
+            "title":"为创建更为快捷的支付系统，以色列央行考虑推出官方数字货币 ...",
+            "dec":"“世界各国的央行都在研究（使用数字货币），所以我们也应该这么做”...",
             "time":1514379424887
         },
         {
             "id":6,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票6",
-            "dec":"描述",
+            "url":"http://paynews.net/article-35255-1.html",
+            "img":"/images/static/temp6.jpg",
+            "title":"港股上市公司中国优通将收购微信支付服务商福建创杰60%股权",
+            "dec":"中国优通近日公布，与独立第三方订立谅解备忘录，可能收购福建创杰信息科技60%股权，强调正式协尚待进一步磋商方可落实，双方有180日的排他期。",
             "time":1514379424887
         },
         {
             "id":7,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票7",
-            "dec":"描述",
+            "url":"http://www.mpaypass.com.cn/news/201712/28103032.html",
+            "img":"/images/static/temp7.jpg",
+            "title":"微信支付宝迅速回应央行296号文：认同规范，积极配合",
+            "dec":"央行网站发布了《条码支付业务规范（试行）》的通知，二维码支付两大巨头迅速回应，均表示认同央行规范，同时积极研发新技术以及探索新技术应用于条码支付领域的可行性",
             "time":1514379424887
         },
         {
             "id":8,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票8",
-            "dec":"描述",
+            "url":"http://www.mpaypass.com.cn/news/201712/28100125.html",
+            "img":"/images/static/temp8.png",
+            "title":"中国游客购物 不爱现金更爱支付宝",
+            "dec":"马来西亚槟城的小商贩开始接受中国游客用支付宝来购买商品。作为一种无现金支付方式，支付宝正在成为21世纪的收银选择。",
             "time":1514379424887
         },
         {
             "id":9,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票9",
-            "dec":"描述",
+            "url":"http://www.mpaypass.com.cn/news/201712/27095100.html",
+            "img":"/images/static/temp9.png",
+            "title":"易观：2017年3季度中国第三方支付移动支付市场规模近30亿元",
+            "dec":"根据Analysys易观发布的《中国第三方支付移动支付市场季度监测报告2017年第3季度》数据显示，2017年第三季度，中国第三方支付移动支付市场交易规模达294959.2亿元人民币，环比增长28.02%。",
             "time":1514379424887
         },
         {
             "id":10,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票10",
-            "dec":"描述",
-            "time":1514379424887
-        },
-        {
-            "id":11,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票11",
-            "dec":"描述",
-            "time":1514379424887
-        },
-        {
-            "id":12,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票12",
-            "dec":"描述",
-            "time":1514379424887
-        },
-        {
-            "id":13,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票13",
-            "dec":"描述",
-            "time":1514379424887
-        },
-        {
-            "id":14,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票14",
-            "dec":"描述",
-            "time":1514379424887
-        },
-        {
-            "id":15,
-            "url":"https://www.baidu.com",
-            "img":"/images/static/temp1.jpg",
-            "title":"买火车票15",
-            "dec":"描述",
+            "url":"http://www.mpaypass.com.cn/news/201712/28110223.html",
+            "img":"/images/static/temp10.jpg",
+            "title":"盘点：2017年金融科技十大关键词",
+            "dec":"标签：盘点，金融科技，十大关键词",
             "time":1514379424887
         }
     ]

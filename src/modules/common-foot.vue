@@ -25,7 +25,7 @@
                 <a href="/">微信支付商户平台</a>
                 <a href="/">微信支付商户平台</a>
             </nav> -->
-            <aside class="common-foot-cp">Copyright  2017 武汉木丰科技有限公司 鄂ICP备17010776号-1</aside>
+            <aside class="common-foot-cp">Copyright©2017 武汉木丰科技有限公司 鄂ICP备17010776号-1</aside>
         </div>
     </div>
 </template>
