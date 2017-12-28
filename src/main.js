@@ -18,3 +18,4 @@ new Vue({
 })
 
 FastClick.attach(document.body);
+

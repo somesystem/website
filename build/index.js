@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const pluginsText = new Date().toLocaleString() + '\n\r * built by `zhe-he`';
+const pluginsText = new Date().toLocaleString() + '\n\r * built by `mufengkeji`';
 
 const DIST = 'dist';
 var srcVue = 'node_modules/vue/dist/vue.js';
@@ -64,7 +64,7 @@ module.exports = {
     module: {
         rules: [
             { test: /\.html$/, use: ['html-loader'] },
-            { test: /\.js$/, exclude: /node_modules/, use: [{ loader:'babel-loader' }] },
+            { test: /\.js$/, use: [{ loader:'babel-loader' }] },
             { test: /\.tsx?$/, use: [{ loader: 'ts-loader' }] },
             { test: /\.css$/, use: cssLoader },
             { test: /\.(scss|sass)$/, use: cssLoader.concat({loader:'sass-loader'}) },
