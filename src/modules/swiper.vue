@@ -2,7 +2,7 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" v-for="item in banner">
-                <a :href="item.link"><img :src="item.src" alt=""></a>
+                <a :href="item.link" target="_blank"><img :src="item.src" alt=""></a>
             </div>
         </div>
         <div class="swiper-pagination"></div>
