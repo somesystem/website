@@ -16,7 +16,8 @@
                 <div class="common-foot-address">
                     <p>地址：武汉市东湖高新技术开发区光谷大道现代世贸中心J栋1003</p>
                     <p>邮箱：<a href="mailto:wuhanmufeng131@163.com">wuhanmufeng131@163.com</a></p>
-                    <p>地址：<a href="tel:027-62435770">027-62435770</a></p>
+                    <p>：<a href="tel:027-62435770">027-62435770</a></p>
+                    <p>电话：<a href="tel:027-62435770">027-62435770</a></p>
                 </div>
             </div>
             <!-- <nav class="common-foot-friend">
